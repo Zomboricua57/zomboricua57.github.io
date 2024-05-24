@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMTH</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: black;
+            color: white;
+            font-family: 'Nosifer', cursive;
+        }
+        #title {
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            background: #222;
+        }
+        #audio-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            background: black;
+        }
+        #play-button {
+            font-size: 24px;
+            cursor: pointer;
+            background: #444;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        canvas {
+            display: block;
+            width: 100%;
+            height: 50vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="title">BMTH</div>
+    <div id="audio-container">
+        <button id="play-button">Play Audio</button>
+        <audio id="audio" src="bmth-audio.mp3" preload="auto"></audio>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="visualizer.js"></script>
+</body>
+</html>
